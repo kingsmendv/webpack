@@ -1,7 +1,10 @@
 module.exports = [
 	{
 		name: "default",
-		entry: "./index",
+		entry: {
+			main: "./index",
+			"nested/entry/point": "./nested"
+		},
 		target: "node",
 		output: {
 			filename: "default-[name].js",
